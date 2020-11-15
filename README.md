@@ -24,7 +24,7 @@ Once the Router receives a message it will perform 3 steps:
 - Forward the message.
 
 
-*Broker*
+*Broker:*
 
 The Broker will send two types of messages:
 
@@ -36,13 +36,13 @@ Exeuted - when the order was accepted by the market and the action succeeded
 Rejected - when the order could not be met
 
 
-*Market*
+*Market:*
 
 A market has a list of tools which can be traded. When orders from brokers are received, the market attempts to execute them.
  If the execution is successful, the broker updates the internal instrument list and sends an excuted message to the broker.
  If the order can not be fulfilled, a rejected message is sent to the market.
  
- *Prerequisites*
+ *Prerequisites:*
  Java (Core Programming Language - JDK 8 >)
  Maven (Dependency Management)
  
@@ -50,12 +50,12 @@ A market has a list of tools which can be traded. When orders from brokers are r
  After cloning the repo, cd into the repo and run the following commands in your terminal:
  
  
- First shell
+ First shell:
  $ mvn clean package
  $ java -jar router/target/Router-1.0-SNAPSHOT.jar
  
- Second shell
+ Second shell:
  $ java -jar broker/target/Broker-1.0-SNAPSHOT.jar
  
- Third shell
+ Third shell:
  $ java -jar market/target/Market-1.0-SNAPSHOT.jar
