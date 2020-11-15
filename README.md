@@ -43,6 +43,8 @@ A market has a list of tools which can be traded. When orders from brokers are r
  If the order can not be fulfilled, a rejected message is sent to the market.
  
  *Prerequisites:*
+ 
+ 
  Java (Core Programming Language - JDK 8 >)
  Maven (Dependency Management)
  
@@ -59,7 +61,11 @@ A market has a list of tools which can be traded. When orders from brokers are r
  $ java -jar router/target/Router-1.0-SNAPSHOT.jar
  
  Second shell:
+ 
+ 
  $ java -jar broker/target/Broker-1.0-SNAPSHOT.jar
  
  Third shell:
+ 
+ 
  $ java -jar market/target/Market-1.0-SNAPSHOT.jar
