@@ -47,10 +47,14 @@ A market has a list of tools which can be traded. When orders from brokers are r
  Maven (Dependency Management)
  
  *Set Up*
+ 
+ 
  After cloning the repo, cd into the repo and run the following commands in your terminal:
  
  
  First shell:
+ 
+ 
  $ mvn clean package
  $ java -jar router/target/Router-1.0-SNAPSHOT.jar
  
